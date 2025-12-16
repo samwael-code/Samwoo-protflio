@@ -1,0 +1,38 @@
+export const testimonials =[
+    {
+        id:1,
+        name: "John Doe",
+        role: 'CTO',
+        company: "TechCorp",
+        Image: '#',
+        quote: "This company provided excellent service and support throughout our project.",
+        rating: 5,
+    },
+     {
+        id:2,
+        name: "John Doe",
+        role: 'CTO',
+        company: "TechCorp",
+        Image: '#',
+        quote: "This company provided excellent service and support throughout our project.",
+        rating: 5,
+    },
+     {
+        id:3,
+        name: "John Doe",
+        role: 'CTO',
+        company: "TechCorp",
+        Image: '#',
+        quote: "This company provided excellent service and support throughout our project.",
+        rating: 5,
+    },
+     {
+        id:4,
+        name: "John Doe",
+        role: 'CTO',
+        company: "TechCorp",
+        Image: '#',
+        quote: "This company provided excellent service and support throughout our project.",
+        rating: 5,
+    },
+];
