@@ -1,9 +1,9 @@
 export const PERSONAL_INFO ={
     name: "Samwoo",
-    title:'Full Stack Developer',
+    title:'Full Stack Developer & UI/UX Enthusiast',
     email:'san.hanna@gmail.com',
-    location:'Seoul, South Korea',
-    tagline:'Creating seamless digital experiences with code.',
+    location:'Cairo, Egypt',
+    tagline:'Building modern web apps that just works, specializing in React.js and Node.js, delivering seamless user experiences.',
     resume:'https://example.com/resume.pdf',
     bio:[
         "Passionate Full Stack Developer with expertise in React, Node.js, and MongoDB.",
@@ -19,11 +19,11 @@ export const SOCIAL_LINKS = {
 
 export const STATS = [
     {
-        label: 'yearsOfExperience',
+        label: 'years Experience',
         value: '5', 
     },
     {
-        label: 'projectsCompleted',
+        label: 'projects Completed',
         value: '20',
     },
     {
@@ -31,7 +31,7 @@ export const STATS = [
         value: '15+' ,
     },
     {
-        label: 'ClientSatisfaction',
+        label: 'Client Satisfaction',
         value: '95%' ,
     }
 ];

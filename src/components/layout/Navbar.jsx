@@ -68,9 +68,42 @@ const Navbar = () => {
             </button>
 
           </div>
+          {/* Mobile Menu Button */}
+          <button
+           onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className=" md:hidden p-4 text-white hover:text-white/80 transition-colors"
+            aria-label="Menu"
+            aria-expanded={isMenuOpen}
+          >
+            {isMenuOpen ? <X className='w-6 h-6 text-white' /> : <Menu className='w-7 h-7 text-white' />}
+          </button>
       </div>
     </div>
+       {/* Mobile Navigation Menu */}
+       <div className={`md:hidden transition-all duration-300 overflow-hidden ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'} `}>
+         <div className="bg-black/95 backdrop-blur-lg border-t border-white/10 flex flex-col px-5 py-4 gap-2">
+          {NAV_LINKS.map((link) => (
+            <button 
+              key={link.id}
+              onClick={() => handleNavClick(link.id)}
+              className={`block w-full text-left py-3 px-4 rounded-lg font-medium transition-all duration-300 ${activeSection === link.id
+                ? 'text-white bg-white/10'
+                : 'text-white/70 hover:text-white hover:text-white/30'
+              }`}
+            >
+              {link.label}
+            </button>
+          ))}
+          <button onClick={() => handleNavClick('contact')}
+          className='w-full px-7 py-3.5 bg-white text-[#212121] font-medium text-based rounded-[17px] border border-white hover:bg-white/90 tranition-all duration-300 mt-2'
+            
+            >
+              Hire Me
+            
+          </button>
+         </div>
 
+       </div>
   </nav>
   )
 }
